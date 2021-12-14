@@ -1,0 +1,56 @@
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-wrapper{
+    width: 85%;
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 1.125rem;
+}
+.primary-btn{
+    width: 60%;
+    border: none;
+    padding: 0.8rem 0;
+    border-radius: 50px;
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.primary-btn:hover{
+    background-color: var(--primary-light);
+}
+.secondary-btn{
+    width: 70%;
+    padding: 0.6rem 0;
+    margin: 1rem 0;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.secondary-btn:hover{
+    background-color: var(--white);
+    color: var(--black);
+}
+.social-btn{
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin: 0 0.6rem;
+    cursor: pointer;
+}
+.active-form-area{
+    transform: translateY(650px);
+}
+.active-aside-area{
+    transform: translateY(-43.5rem);
+}

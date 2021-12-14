@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Sign In Sign Up Page</title>
+</head>
+
+<body>
+
+    <div class="container flex">
+        <div class="form-area">
+
+            <form action="#" class="sign-in-form" id="sign-in-form">
+                <h1>SIGN IN!</h1>
+
+                <div class="wrapper flex">
+                    <div class="user-name flex input-wrapper">
+                        <input type="text" name="user-name" autocomplete="off" required>
+                        <span><i class="fas fa-user"></i></span>
+                        <label for="user-name">Username</label>
+                    </div>
+
+                    <div class="password flex input-wrapper">
+                        <input type="password" name="password" autocomplete="off" required>
+                        <span><i class="fas fa-lock"></i></span>
+                        <label for="password">Password</label>
+                    </div>
+
+                    <div class="form-functions flex">
+                        <div class="remember-me flex">
+                            <input type="checkbox" name="" id="rember-me">
+                            <p>Remember Me</p>
+                        </div>
+
+                        <div class="forgot-password">
+                            <a href="#">Forgot Password ?</a>
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="primary-btn">Sign In</button>
+
+                    <small>OR</small>
+
+                    <div class="btns flex">
+                        <a href="#" class="social-btn flex">
+                            <div class="flex"><i class="fab fa-google"></i></div>
+                        </a>
+                        <a href="#" class="social-btn flex">
+                            <div class="flex"><i class="fab fa-facebook-f"></i></div>
+                        </a>
+                        <a href="#" class="social-btn flex">
+                            <div class="flex"><i class="fab fa-twitter"></i></div>
+                        </a>
+                        <a href="#" class="social-btn flex">
+                            <div class="flex"><i class="fab fa-linkedin-in"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </form>
+
+            <form action="#" class="sign-up-form" id="sign-up-form">
+                <h1>SIGN UP!</h1>
+
+                <div class="wrapper flex">
+                    <div class="user-name flex input-wrapper">
+                        <input type="text" name="user-name" autocomplete="off" required>
+                        <span><i class="fas fa-user"></i></span>
+                        <label for="user-name">Username</label>
+                    </div>
+
+                    <div class="email-address flex input-wrapper">
+                        <input type="email" name="email-address" autocomplete="off" required>
+                        <span><i class="fas fa-envelope"></i></span>
+                        <label for="email-address">Email Address</label>
+                    </div>
+
+                    <div class="password flex input-wrapper">
+                        <input type="password" name="password" autocomplete="off" required>
+                        <span><i class="fas fa-lock"></i></span>
+                        <label for="password">Password</label>
+                    </div>
+
+                    <div class="confirm-password flex input-wrapper">
+                        <input type="text" name="confirm-password" autocomplete="off" required>
+                        <span><i class="fas fa-lock"></i></span>
+                        <label for="confirm-password">Confirm Password</label>
+                    </div>
+
+                    <button type="submit" class="primary-btn">Sign Up</button>
+
+                    <small>OR</small>
+
+                    <div class="btns flex">
+                        <a href="#" class="social-btn flex">
+                            <div class="flex"><i class="fab fa-google"></i></div>
+                        </a>
+                        <a href="#" class="social-btn flex">
+                            <div class="flex"><i class="fab fa-facebook-f"></i></div>
+                        </a>
+                        <a href="#" class="social-btn flex">
+                            <div class="flex"><i class="fab fa-twitter"></i></div>
+                        </a>
+                        <a href="#" class="social-btn flex">
+                            <div class="flex"><i class="fab fa-linkedin-in"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="aside-area flex">
+            <div class="wrapper">
+                <div class="sign-in-aside-area" id="sign-in-aside-area">
+                    <div class="sign-in-aside-info">
+                        <h1>Welcome</h1>
+                        <img src="./images/Sign-In.svg" alt="Sign In">
+                    </div>
+
+                    <div class="sign-up-aside-info flex">
+                        <div class="info-txt flex">
+                            <span>Already have an</span>
+                            <span>account ?</span>
+                        </div>
+
+                        <button class="secondary-btn" id="secondary-btn-sign-in">Sign In</button>
+                    </div>
+                </div>
+
+                <div class="sign-up-aside-area" id="sign-up-aside-area">
+                    <div class="sign-up-aside-info">
+                        <h1>Hello</h1>
+                        <img src="./images/Sign-up.svg" alt="Sign In">
+                    </div>
+
+                    <div class="sign-up-aside-info flex">
+                        <div class="info-txt flex">
+                            <span>Don't have account ?</span>
+                        </div>
+
+                        <button class="secondary-btn" id="secondary-btn-sign-up">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="mobile-top-area">
+            <img src="./images/mobile_top_bg.png" alt="">
+            <div class="info">
+                <h1>Welcome</h1>
+                <img src="./images/Sign-In.svg" alt="">
+            </div>
+        </div>
+
+        <div class="mobile-bottom-area">
+            <img src="./images/mobile_bottom_bg.png" alt="">
+        </div> -->
+    </div>
+
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>

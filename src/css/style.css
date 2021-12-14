@@ -1,0 +1,357 @@
+@import url('_utility.css');
+@import url('_variables.css');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap');
+
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+/* .mobile-top-area{
+    display: none;
+}
+.mobile-bottom-area{
+    display: none;
+} */
+body{
+    font-family: 'Baloo Bhai 2',sans-serif, cursive;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--doc-bg);
+    display: grid;
+    place-items: center;
+}
+/* CSS RESET END */
+
+/* FORM CONTAINER */
+.container{
+    width: 60%;
+    height: 650px;
+    background-color: var(--white);
+    border-radius: 0.625rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* MAIN FORM AREA */
+.form-area{
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+/* FORM HEADING */
+form h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    margin: 2.5rem 0 2.5rem 2.5rem;
+    user-select: none;
+}
+form .wrapper{
+    flex-direction: column;
+}
+
+/* FORM INPUTS */
+form input{
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    border-radius: 50px;
+    width: 100%;
+    height: 2.8125rem;
+    padding: 0 3.625rem;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+form span{
+    position: absolute;
+    width: 1.125rem;
+    opacity: 0.6;
+    left: 1.5rem;
+    pointer-events: none;
+    transition: all 0.3s ease-in;
+}
+form label{
+    background-color: var(--white);
+    border-radius: 50px;
+    padding: 0 0.5rem;
+    position: absolute;
+    opacity: 0.75;
+    left: 3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    pointer-events: none;
+    transition: all 0.3s ease-in;
+}
+form input:hover{
+    border: 2px solid var(--secondary);
+}
+form input:focus{
+    border: 2px solid var(--secondary);
+}
+form input:focus ~ span{
+    opacity: 1;
+}
+form input:focus ~ label, form input:valid ~ label{
+    transform: translateY(-1.5rem);
+    opacity: 1;
+}
+/* FORM INPUTS END */
+
+form small{
+    font-size: 1.125rem;
+    font-weight: 700;
+    opacity: 0.6;
+    margin: 1.5rem 0;
+    user-select: none;
+}
+
+/* FORM PRIMARY BUTTON */
+.btns{
+    justify-content: center;
+    transition: all 0.3s ease-in;
+}
+.btns div{
+    width: 1.125rem;
+    height: 1.125rem;
+    opacity: 0.6;
+    transition: all 0.3s ease-in;
+}
+
+/* FORM SOCIAL BUTTONS */
+.social-btn:nth-child(1):hover{
+    border: 2px solid var(--google);
+    color: var(--google);
+}
+.social-btn:nth-child(1):hover div{
+    color: var(--google);
+    opacity: 1;
+}
+.social-btn:nth-child(2):hover{
+    border: 2px solid var(--facebook);
+    color: var(--facebook);
+}
+.social-btn:nth-child(2):hover div{
+    color: var(--facebook);
+    opacity: 1;
+}
+.social-btn:nth-child(3):hover{
+    border: 2px solid var(--twitter);
+    color: var(--twitter);
+}
+.social-btn:nth-child(3):hover div{
+    color: var(--twitter);
+    opacity: 1;
+}
+.social-btn:nth-child(4):hover{
+    border: 2px solid var(--linkedin);
+    color: var(--linkedin);
+}
+.social-btn:nth-child(4):hover div{
+    color: var(--linkedin);
+    opacity: 1;
+}
+/* FORM SOCIAL BUTTONS END*/
+
+/* FORM ASIDE AREA */
+.aside-area{
+    width: 45%;
+    height: 100%;
+    position: relative;
+    margin: 0.5rem;
+}
+.aside-area .wrapper{
+    position: relative;
+    height: 97.5%;
+    background-color: var(--primary);
+    border-radius: 0.625rem;
+}
+.aside-area h1{
+    font-size: 2.1875rem;
+    color: var(--white);
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 2rem auto 2.5rem 1.125rem;
+    user-select: none;
+}
+.aside-area img{
+    width: 85%;
+    display: block;
+    margin: 0 auto 5rem auto;
+    user-select: none;
+}
+.sign-up-aside-info{
+    flex-direction: column;
+}
+.info-txt{
+    flex-direction: column;
+}
+.info-txt span{
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    color: var(--white);
+    opacity: 0.6;
+}
+
+.sign-up-form{
+    transition: all 1s ease-out;
+}
+.sign-in-form{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -650px;
+    transition: all 1s ease-out;
+}
+.parent{
+    position: relative;
+}
+.sign-in-aside-area{
+    transition: all 1s ease-out;
+}
+.sign-up-aside-area{
+    position: absolute;
+    bottom: -39rem;
+    transition: all 1s ease-out;
+}
+.sign-in-form .user-name{
+    margin-bottom: 2rem;
+}
+.form-functions{
+    width: 95%;
+    margin-bottom: 2rem;
+    justify-content: space-around;
+}
+.form-functions input[type="checkbox"]{
+    width: 1rem;
+    opacity: 0.75;
+    margin-right: 0.5rem;
+}
+.form-functions p{
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.6;
+    transition: all 0.3s ease-out;
+}
+.form-functions a{
+    color: var(--black);
+    font-size: 1.125rem;
+    font-weight: 600;
+    opacity: 0.6;
+    transition: all 0.3s ease-out;
+}
+.form-functions input[type="checkbox"]:hover ~ p, .form-functions a:hover{
+    color: var(--secondary);
+    opacity: 1;
+}
+.sign-up-aside-area img{
+    width: 80%;
+}
+
+ @media (max-width: 1100px){
+    .container{
+        width: 70%;
+    }
+}
+@media (max-width: 950px){
+    .container{
+        width: 75%;
+    }
+}
+@media (max-width: 800px){
+    .container{
+        width: 85%;
+    }
+}
+@media (max-width: 650px){
+    .container{
+        width: 100%;
+    }
+    .form-functions p{
+        font-weight: 400;
+    }
+    .form-functions a{
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+}
+/* @media (max-width: 450px){
+    .container{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        position: relative;
+    }
+    .aside-area{
+        display: none;
+    }
+    .form-area{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    form h1{
+        margin: 0 0 0.5rem 2rem;
+    }
+    .input-wrapper{
+        margin-bottom: 0.7rem;
+    }
+    form small{
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+    .mobile-top-area{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .mobile-top-area img{
+        width: 100%;
+        height: 140px;
+    }
+    .mobile-bottom-area{
+        display: block;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        right: 0;
+    }
+    .mobile-bottom-area img:first-child{
+        width: 100%;
+        height: 145px;
+    }
+    .mobile-top-area .info h1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 0.5rem;
+        margin-left: 2rem;
+        font-size: 2.2rem;
+        color: var(--white);
+        font-weight: 600;
+        letter-spacing: 1px;
+        user-select: none;
+    }
+    .mobile-top-area .info img{
+        position: absolute;
+        top: 0;
+        right: 50px;
+        width: 35%;
+        user-select: none;
+    }
+} */
